@@ -1,6 +1,8 @@
 title: National Elections Database
 description: A website for hosting the National Elections Database with the aim of facilitating future electoral research.
-theme: jekyll-theme-minimal
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
 baseurl: "" # Empty as site is in base folder
 url: https://<Jade-Sillere>.github.io # Replace with your GitHub Pages URL
 
