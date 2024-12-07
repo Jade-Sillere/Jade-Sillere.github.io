@@ -1,11 +1,12 @@
 title: National Elections Database
-description: A website for hosting the National Elections Database with the aim of facilitating future electoral research.
-logo: /assets/images/Number-of-national-elections-in-database.jpg # To add logo to website
+description: A website for hosting the National Elections Database - a database containing national election results for parliamentary and presidential elections worldwide from 1946 to 2018 - with the aim of facilitating future electoral research.
+logo: {{ "/assets/images/posters/Number-of-national-elections-in-database.jpg" | absolute_url }}
+# /assets/images/Number-of-national-elections-in-database.jpg # To add logo to website
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 baseurl: "" # Empty as site is in base folder
-# url: https://Jade-Sillere.github.io # Replace with your GitHub Pages URL
+url: https://Jade-Sillere.github.io # Replace with your GitHub Pages URL
 
 links:
   - title: Overview
