@@ -3,6 +3,10 @@
 
 @import "jekyll-theme-minimal";
 
+html, body {
+  margin-right: 20px;
+}
+
 .site-links ul {
   list-style: none;
   padding: 0;
@@ -32,3 +36,4 @@
 .reduced-line-space {
   line-height: 1.2; /* Adjust the value as needed (e.g., 1, 1.2, 1.5) */
 }
+
