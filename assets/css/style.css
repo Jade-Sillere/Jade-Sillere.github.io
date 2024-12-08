@@ -3,23 +3,28 @@
 
 @import "jekyll-theme-minimal";
 
-/* Style the social links */
-.links ul {
+.site-links ul {
   list-style: none;
   padding: 0;
-  margin: 1rem 0 0;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.links li {
-  margin: 0.5rem 0; /* Add spacing between links */
-}
-
-.links a {
+.site-links .button {
+  display: inline-block;
   text-decoration: none;
-  color: #333; /* Adjust link color */
-  font-size: 1.2rem; /* Increase font size for visibility */
+  background: #007acc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.links a:hover {
-  text-decoration: underline;
+.site-links .button:hover {
+  background: #005f99;
+  transform: translateY(-2px);
 }
