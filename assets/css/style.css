@@ -3,46 +3,23 @@
 
 @import "jekyll-theme-minimal";
 
-/* Style the header wrapper */
-.site-header .wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 1rem;
-}
-
-/* Style the navigation menu */
-.site-nav .nav-links {
+/* Style the social links */
+.links ul {
   list-style: none;
   padding: 0;
-  margin-top: 1rem; /* Space between title and links */
+  margin: 1rem 0 0;
 }
 
-.site-nav .nav-links li {
-  margin: 0.5rem 0; /* Add vertical spacing */
+.links li {
+  margin: 0.5rem 0; /* Add spacing between links */
 }
 
-.site-nav .nav-links .page-link {
+.links a {
   text-decoration: none;
   color: #333; /* Adjust link color */
+  font-size: 1.2rem; /* Increase font size for visibility */
 }
 
-.site-nav .nav-links .page-link:hover {
+.links a:hover {
   text-decoration: underline;
-}
-
-/* Sidebar styling */
-.site-header {
-  width: 20%;
-  position: fixed;
-  height: 100%;
-  background-color: #f9f9f9;
-  padding: 1rem;
-  border-right: 1px solid #ddd;
-}
-
-/* Main content adjustment */
-.main-content {
-  margin-left: 20%;
-  padding: 2rem;
 }

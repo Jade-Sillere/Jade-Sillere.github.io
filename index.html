@@ -31,11 +31,11 @@ title: Overview
       <!-- Logo and Title -->
       <a class="site-title" rel="author" href="/">National Elections Database</a>
 
-      <!-- Navigation Menu -->
-      <nav class="site-nav">
-        <ul class="nav-links">
-          {% for item in site.menu %}
-            <li><a class="page-link" href="{{ item.url }}">{{ item.name }}</a></li>
+      <!-- Links -->
+      <nav class="links">
+        <ul>
+          {% for link in site.social_links %}
+            <li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a></li>
           {% endfor %}
         </ul>
       </nav>
