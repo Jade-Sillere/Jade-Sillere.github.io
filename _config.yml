@@ -8,10 +8,10 @@ plugins:
 baseurl: "" # Empty as site is in base folder
 url: https://Jade-Sillere.github.io # Replace with your GitHub Pages URL
 
-links:
-  - title: Overview
+menu:
+  - name: Overview
     url: /
-  - title: Data downloads
+  - name: Data downloads
     url: /data-downloads/
     
 

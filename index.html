@@ -31,81 +31,85 @@ title: Overview
       <!-- Logo and Title -->
       <a class="site-title" rel="author" href="/">National Elections Database</a>
 
-      <!-- Site Navigation -->
+      <!-- Navigation Menu -->
       <nav class="site-nav">
-        <div class="nav-links">
-          <a class="page-link" href="/">Overview</a>
-          <a class="page-link" href="/data-downloads/">Data downloads</a>
-        </div>
+        <ul class="nav-links">
+          {% for item in site.menu %}
+            <li><a class="page-link" href="{{ item.url }}">{{ item.name }}</a></li>
+          {% endfor %}
+        </ul>
       </nav>
     </div>
   </header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <h1 id="national-elections-database">National Elections Database</h1>
+</body>
+<div class="main-content">
+  <!-- Page content goes here -->
+	<main class="page-content" aria-label="Content">
+		<div class="wrapper">
+			<h1 id="national-elections-database">National Elections Database</h1>
 
 <!-- <p><img src="{{ '/assets/images/Number-of-national-elections-in-database.jpg' | relative_url }}" alt="" width="1200"/></p> -->
 
-<p>The National Elections Database is intended to provide a centralized database of national election results since World War II with the aim of facilitating electoral research. Consisting of 3,985 national elections, including 1,023 presidential elections and 2,962 parliamentary elections, it includes all presidential and parliamentary elections held around the world between 1946 and 2018.</p>
+	<p>The National Elections Database is intended to provide a centralized database of national election results since World War II with the aim of facilitating electoral research. Consisting of 3,985 national elections, including 1,023 presidential elections and 2,962 parliamentary elections, it includes all presidential and parliamentary elections held around the world between 1946 and 2018.</p>
 
 
-<h2 id="dataset-features">Datasets available</h2>
+	<h2 id="dataset-features">Datasets available</h2>
+	
+	<h3 id="1-parliamentary-elections">1. Parliamentary Elections</h3>
 
-<h3 id="1-parliamentary-elections">1. Parliamentary Elections</h3>
+	<ul>
+	<li><strong>Summary</strong>: Election results for all parliamentary elections from 1946 to 2018.</li>
+	<li><strong>Election coverage</strong>: 2,962 parliamentary elections</li>
+	<li><strong>Key information</strong>: Seat number and shares for all parties along with information on the incumbent party, margin of victory of the opposition over the incumbent party, and whether there was an electoral turnover.</li>
+	<li><strong>Formats</strong>: STATA</li>
+	</ul>
 
-<ul>
-  <li><strong>Summary</strong>: Election results for all parliamentary elections from 1946 to 2018.</li>
-  <li><strong>Election coverage</strong>: 2,962 parliamentary elections</li>
-  <li><strong>Key information</strong>: Seat number and shares for all parties along with information on the incumbent party, margin of victory of the opposition over the incumbent party, and whether there was an electoral turnover.</li>
-  <li><strong>Formats</strong>: STATA</li>
-</ul>
+	<h3 id="2-presidential-elections">2. Presidential Elections</h3>
 
-<h3 id="2-presidential-elections">2. Presidential Elections</h3>
+	<ul>
+	<li><strong>Summary</strong>: Election results for all presidential elections from 1946 to 2018.</li>
+	<li><strong>Election coverage</strong>: 1,023 presidential elections</li>
+	<li><strong>Key information</strong>: Vote number and shares for all candidates along with information on the incumbent candidate, margin of victory of the challenger over the incumbent candidate, and whether there was an electoral turnover.</li>
+	<li><strong>Formats</strong>: STATA</li>
+	</ul>
 
-<ul>
-  <li><strong>Summary</strong>: Election results for all presidential elections from 1946 to 2018.</li>
-  <li><strong>Election coverage</strong>: 1,023 presidential elections</li>
-  <li><strong>Key information</strong>: Vote number and shares for all candidates along with information on the incumbent candidate, margin of victory of the challenger over the incumbent candidate, and whether there was an electoral turnover.</li>
-  <li><strong>Formats</strong>: STATA</li>
-</ul>
+	<h2 id="citation">Associated paper</h2>
 
-<h2 id="citation">Associated paper</h2>
+	<p>The database was initially constructed as part of a study on the effects of electoral turnovers on national economic performance.</p> 
 
-<p>The database was initially constructed as part of a study on the effects of electoral turnovers on national economic performance.</p> 
+	<p>You may find the associated paper <a href="https://www.nber.org/papers/w29766">here</a>.</p>
 
-<p>You may find the associated paper <a href="https://www.nber.org/papers/w29766">here</a>.</p>
-
-<p>Additionally, you may find the replication package for the associated paper <a href="https://zenodo.org/records/13314638">here</a>.</p>
-
-
-<h2 id="citation">How to cite this database</h2>
-
-<p>Marx, B., Pons, V., &amp; Rollet, V. (2024). National Elections Database (Version 1.0). Accessible at www.nationalelectionsdatabase.com.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@misc{MarxPonsRollet2024NationalElections,
-  author = {Benjamin Marx and Vincent Pons and Vincent Rollet},
-  title = {National Elections Database (Version 1.0)},
-  year = {2024},
-  url = {http://nationalelectionsdatabase.com}}
-</code></pre></div></div>
-
-<p style="color: gray; font-style: italic;"><small>Version 1.0 of the database includes information for 3,985 national elections.</small></p>
+	<p>Additionally, you may find the replication package for the associated paper <a href="https://zenodo.org/records/13314638">here</a>.</p>
 
 
-<h2 id="authors">Authors</h2>
+	<h2 id="citation">How to cite this database</h2>
 
-<ul>
-  <li><a href="https://sites.google.com/view/bmarx/home">Benjamin Marx</a> (<a href="mailto:bmarx@bu.edu">bmarx@bu.edu</a>)</li>
-  <li><a href="https://www.vincentpons.org/">Vincent Pons</a> (<a href="mailto:vpons@hbs.edu">vpons@hbs.edu</a>)</li>
-  <li><a href="https://www.vincent-rollet.com/">Vincent Rollet</a> (<a href="mailto:vrollet@mit.edu">vrollet@mit.edu</a>)</li>
-</ul>
+	<p>Marx, B., Pons, V., &amp; Rollet, V. (2024). National Elections Database (Version 1.0). Accessible at www.nationalelectionsdatabase.com.</p>
 
-<h2 id="work-in-progress">Issues to report</h2>
+	<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@misc{MarxPonsRollet2024NationalElections,
+	author = {Benjamin Marx and Vincent Pons and Vincent Rollet},
+	title = {National Elections Database (Version 1.0)},
+	year = {2024},
+	url = {http://nationalelectionsdatabase.com}}
+	</code></pre></div></div>
 
-<p>The database is continually being improved and developed. If you have any suggestions, comments, or issues, please feel free to contact the authors using the contact details listed above.</p>
+	<p style="color: gray; font-style: italic;"><small>Version 1.0 of the database includes information for 3,985 national elections.</small></p>
 
-      </div>
-    </main> <!-- <footer class="site-footer h-card">
+
+	<h2 id="authors">Authors</h2>
+
+	<ul>
+	<li><a href="https://sites.google.com/view/bmarx/home">Benjamin Marx</a> (<a href="mailto:bmarx@bu.edu">bmarx@bu.edu</a>)</li>
+	<li><a href="https://www.vincentpons.org/">Vincent Pons</a> (<a href="mailto:vpons@hbs.edu">vpons@hbs.edu</a>)</li>
+	<li><a href="https://www.vincent-rollet.com/">Vincent Rollet</a> (<a href="mailto:vrollet@mit.edu">vrollet@mit.edu</a>)</li>
+	</ul>
+
+	<h2 id="work-in-progress">Issues to report</h2>
+
+	<p>The database is continually being improved and developed. If you have any suggestions, comments, or issues, please feel free to contact the authors using the contact details listed above.</p>
+
+	</div>
+	</main> <!-- <footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
 
   <div class="wrapper">
@@ -122,6 +126,6 @@ title: Overview
   </div>
 
 </footer> -->
-</body>
+</div>
 
 </html>

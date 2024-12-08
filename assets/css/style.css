@@ -6,39 +6,43 @@
 /* Style the header wrapper */
 .site-header .wrapper {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: flex-start; /* Align elements to the left */
-  padding: 1rem; /* Add some spacing */
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
 }
 
-/* Style the navigation links */
+/* Style the navigation menu */
 .site-nav .nav-links {
-  margin-top: 1rem; /* Add space between the title and links */
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem; /* Space between title and links */
 }
 
-.site-nav .nav-links .page-link {
-  display: block; /* Ensure links stack vertically */
-  text-decoration: none;
-  color: #333; /* Adjust link color */
+.site-nav .nav-links li {
   margin: 0.5rem 0; /* Add vertical spacing */
 }
 
+.site-nav .nav-links .page-link {
+  text-decoration: none;
+  color: #333; /* Adjust link color */
+}
+
 .site-nav .nav-links .page-link:hover {
-  text-decoration: underline; /* Add hover effect */
+  text-decoration: underline;
 }
 
-/* Ensure the header stays on the left */
+/* Sidebar styling */
 .site-header {
-  width: 20%; /* Adjust width to your preference */
-  position: fixed; /* Keep it in the left margin */
-  height: 100%; /* Full height */
-  background-color: #f9f9f9; /* Background for the sidebar */
+  width: 20%;
+  position: fixed;
+  height: 100%;
+  background-color: #f9f9f9;
   padding: 1rem;
-  border-right: 1px solid #ddd; /* Optional border */
+  border-right: 1px solid #ddd;
 }
 
-/* Adjust the main content to not overlap */
+/* Main content adjustment */
 .main-content {
-  margin-left: 20%; /* Match the width of the sidebar */
+  margin-left: 20%;
   padding: 2rem;
 }
