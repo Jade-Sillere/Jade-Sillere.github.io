@@ -2,3 +2,43 @@
 ---
 
 @import "jekyll-theme-minimal";
+
+/* Style the header wrapper */
+.site-header .wrapper {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align elements to the left */
+  padding: 1rem; /* Add some spacing */
+}
+
+/* Style the navigation links */
+.site-nav .nav-links {
+  margin-top: 1rem; /* Add space between the title and links */
+}
+
+.site-nav .nav-links .page-link {
+  display: block; /* Ensure links stack vertically */
+  text-decoration: none;
+  color: #333; /* Adjust link color */
+  margin: 0.5rem 0; /* Add vertical spacing */
+}
+
+.site-nav .nav-links .page-link:hover {
+  text-decoration: underline; /* Add hover effect */
+}
+
+/* Ensure the header stays on the left */
+.site-header {
+  width: 20%; /* Adjust width to your preference */
+  position: fixed; /* Keep it in the left margin */
+  height: 100%; /* Full height */
+  background-color: #f9f9f9; /* Background for the sidebar */
+  padding: 1rem;
+  border-right: 1px solid #ddd; /* Optional border */
+}
+
+/* Adjust the main content to not overlap */
+.main-content {
+  margin-left: 20%; /* Match the width of the sidebar */
+  padding: 2rem;
+}
