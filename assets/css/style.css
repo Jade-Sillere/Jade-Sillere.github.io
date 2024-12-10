@@ -3,10 +3,6 @@
 
 @import "minima-reboot";
 
-body, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif !important;
-}
-
 table {
     width: 100% !important;
     border-collapse: collapse !important;
