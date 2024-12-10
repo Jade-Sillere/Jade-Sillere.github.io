@@ -7,6 +7,35 @@ body, h1, h2, h3, h4, h5, h6 {
   font-family: 'Times New Roman', Times, serif !important;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+  /* Responsive Table */
+.table-container {
+    overflow-x: auto;
+}
+
 .reduced-line-space {
   line-height: 1.5; /* Adjust the value as needed (e.g., 1, 1.2, 1.5) */
 }
