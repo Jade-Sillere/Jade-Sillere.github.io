@@ -8,12 +8,6 @@ remote_theme: aterenin/minima-reboot
 #- jekyll-remote-theme # add this line to the plugins list if you already have one
 baseurl: "" # Empty as site is in base folder
 url: https://Jade-Sillere.github.io # Replace with your GitHub Pages URL
-
-links:
-  - name: 📖 Overview
-    url: /
-  - name: 📂 Data downloads
-    url: /data-downloads/
     
 # Minima reboot code beginning
 plugins:
@@ -27,14 +21,13 @@ minima_reboot:
   date_format_short: "%b %-d"
 
 header_pages:
-- about.md
-- posts.md
-- github.md
+- home.md
+- data-downloads.md
 
-footer_icons:
-- username: Jade-Sillere
-  url: https://github.com/Jade-Sillere/
-  icon: icon-github.svg
+#footer_icons:
+#- username: Jade-Sillere
+#  url: https://github.com/Jade-Sillere/
+#  icon: icon-github.svg
 
 paginate: 5
 
