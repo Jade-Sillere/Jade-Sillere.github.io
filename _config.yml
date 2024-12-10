@@ -1,9 +1,11 @@
 title: National Elections Database
 description: A website for hosting the National Elections Database - a database containing national election results for parliamentary and presidential elections worldwide from 1946 to 2018 - with the aim of facilitating future electoral research.
 # logo: /assets/images/posters/Number of national elections in database.png # To add logo to website
-remote_theme: pages-themes/minimal@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+remote_theme: aterenin/minima-reboot
+# For the minimal theme
+#remote_theme: pages-themes/minimal@v0.2.0
+#plugins:
+#- jekyll-remote-theme # add this line to the plugins list if you already have one
 baseurl: "" # Empty as site is in base folder
 url: https://Jade-Sillere.github.io # Replace with your GitHub Pages URL
 
@@ -13,6 +15,39 @@ links:
   - name: 📂 Data downloads
     url: /data-downloads/
     
+# Minima reboot code beginning
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-redirect-from
 
-exclude: # licence to be included here
+minima_reboot:
+  date_format: "%b %-d, %Y"
+  date_format_short: "%b %-d"
+
+header_pages:
+- about.md
+- posts.md
+- github.md
+
+footer_icons:
+- username: Jade-Sillere
+  url: https://github.com/Jade-Sillere/
+  icon: icon-github.svg
+
+paginate: 5
+
+markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - minima-reboot.gemspec
   - README.md
+# Minima reboot code end
+
+#exclude: # licence to be included here
+# - README.md
+  
+

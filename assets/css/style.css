@@ -1,11 +1,8 @@
 ---
 ---
 
-@import "jekyll-theme-minimal";
+@import "minima-reboot";
 
-html, body {
-  margin-right: 20px;
-}
 
 .site-links ul {
   list-style: none;
