@@ -8,8 +8,8 @@
           <li class="text-secondary">
             {% if site.author %}
               {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
+            <!-- {% else %}
+              {{ site.title | escape }} -->
             {% endif %}
             </li>
             {% if site.email %}
@@ -33,7 +33,9 @@
       </div>
       {% endif %}
       <div class="col-12 col-lg">
-        <p class="text-secondary text-justify">{{ site.description | escape }}</p>
+        <p class="text-secondary text-justify"><small>{{ site.description | escape }}</small></p>
+		<div style="margin-top: 1px;"></div>
+		<p class="text-secondary text-justify"><small><i>Using the minima-reboot jekyll theme by <a href="https://github.com/aterenin">aterenin</a></i></small></p>
       </div>
     </div>
 
